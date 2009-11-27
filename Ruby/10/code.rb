@@ -3,6 +3,8 @@
 # The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 # 
 # Find the sum of all the primes below two million.
+# 
+# http://projecteuler.net/index.php?section=problems&id=10
 
 
 def get_sum_of_primes_up_to high_number
@@ -26,4 +28,4 @@ def get_sum_of_primes_up_to high_number
   return sum_of_primes
 end
 
-puts get_sum_of_primes_up_to(2000000)
+# puts get_sum_of_primes_up_to(2000000)
