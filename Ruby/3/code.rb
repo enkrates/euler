@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -wKU
+#!/usr/bin/env ruby
 
 def find_factors_of_an_integer integer, array_of_factors = []
   
