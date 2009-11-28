@@ -9,14 +9,25 @@
 
 def get_sum_of_primes_up_to high_number
     
-  sum_of_primes = 0
+  sum_of_primes = 2
   
-  (2..high_number).each do |item|
+  (3..high_number).each do |item|
+    if item % 2 == 0
+      next
+    end
+        
     counter = 0
-    for i in 2...item
+    this_square_root = Math.sqrt(item)
+    for i in 3..this_square_root
       if item % i == 0
         counter = counter + 1
       end
+      if counter > 0
+        break
+      end     
+    end
+    if counter > 0
+      next
     end
     
     if counter == 0

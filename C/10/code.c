@@ -4,10 +4,34 @@
 // 
 // http://projecteuler.net/index.php?section=problems&id=10
 
-unsigned long int sum_of_primes;
-unsigned int counter;
-
-for(i = 0; i < 2000000; ++i)
+int main (int argc, char const *argv[])
 {
-	/* code */
+	int i, j, sum_of_primes, counter;
+	
+	sum_of_primes = 0;
+	
+	
+	for(i = 2; i < 2000000; ++i) // 2,000,000
+		{
+			counter = 0;
+			
+			for(j = 2; j < i; ++j)
+			{
+				if ((i % j) == 0){
+					counter++;   
+				};
+			}
+			
+			if (counter == 0){
+				sum_of_primes = sum_of_primes + i; 
+				printf("%d\n", i);  
+    		}
+			
+			
+		}
+		
+		printf("The sum is %d", sum_of_primes);
+		
+		
+	return 0;
 }
