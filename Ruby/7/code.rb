@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 def find_the_number_x_prime number
   
   array_of_primes = Array.new

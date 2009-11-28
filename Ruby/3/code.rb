@@ -1,27 +1,4 @@
-# def find_factors_of_an_integer integer
-#   
-#   array_of_factors = Array.new
-#   
-#   array_of_factors.push(1, integer)
-#   
-#   for i in 1...integer
-#     
-#     if !array_of_factors.include?(i)
-#       if integer % i == 0
-#         array_of_factors.push(i)
-#       end
-#       
-#       if i % 100000 == 0
-#         puts i
-#       end
-#     end
-#     
-#     
-#   end
-#   
-#   return array_of_factors.sort
-#   
-# end
+#!/usr/bin/env ruby -wKU
 
 def find_factors_of_an_integer integer, array_of_factors = []
   
@@ -65,5 +42,5 @@ def find_primes_in_an_array array
 end
 
 
-    factors = find_factors_of_an_integer(600851475143) 
-    puts find_primes_in_an_array(factors)
+    # factors = find_factors_of_an_integer(600851475143) 
+    # puts find_primes_in_an_array(factors)

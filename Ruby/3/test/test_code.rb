@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 require "test/unit"
 
 require "../code.rb"
@@ -6,6 +8,7 @@ class TestCodeRb < Test::Unit::TestCase
   def test_nine
     assert_equal([1, 3, 9], find_factors_of_an_integer(9))
   end
+  
   def test_thirty
     assert_equal([1, 2, 3, 5, 6, 10, 15, 30], find_factors_of_an_integer(30))
   end

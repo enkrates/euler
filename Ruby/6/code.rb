@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 def sum_of_the_squares array_of_numbers
   
   sum = 0

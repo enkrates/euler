@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 def find_smallest_factorable_number array_of_numbers
   
   answer = 0

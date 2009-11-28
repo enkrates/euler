@@ -1,6 +1,8 @@
+#!/usr/bin/env ruby -wKU
+
 require "test/unit"
 
-require "../one.rb"
+require "../code.rb"
 
 class TestOneRb < Test::Unit::TestCase
   def test_ten

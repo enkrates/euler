@@ -1,3 +1,8 @@
+#!/usr/bin/env ruby -wKU
+# 
+# http://projecteuler.net/index.php?section=problems&id=1
+
+
 def sum_of_natural_multiples_of_three_or_five number
   
   current_total = 0
@@ -11,5 +16,3 @@ def sum_of_natural_multiples_of_three_or_five number
   return current_total
   
 end
-
-puts sum_of_natural_multiples_of_three_or_five(1000)

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 require "test/unit"
 
 require "../code.rb"

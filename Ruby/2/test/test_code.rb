@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 require "test/unit"
 
 require "../code.rb"
@@ -6,6 +8,7 @@ class TestCodeRb < Test::Unit::TestCase
   def test_fibonacci_numbers_to_ten
     assert_equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89], fibonacci_numbers_up_to(100))
   end
+  
   def test_fibonacci_numbers_to_one_thousand
     assert_equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987], fibonacci_numbers_up_to(1000))
   end

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby -wKU
+
 def fibonacci_numbers_up_to number
   
   fibonacci_array = Array.new
@@ -45,10 +47,10 @@ def add_an_array array
   return current_total
 end
 
-fibonacci_numbers_up_to_four_million = fibonacci_numbers_up_to(4000000)
-
-even_fibonacci_numbers_up_to_four_million = find_even_numbers_in_an_array(fibonacci_numbers_up_to_four_million)
-
-sum_of_even_fibonacci_numbers_up_to_four_million = add_an_array(even_fibonacci_numbers_up_to_four_million)
-
-puts sum_of_even_fibonacci_numbers_up_to_four_million.to_s
+# fibonacci_numbers_up_to_four_million = fibonacci_numbers_up_to(4000000)
+# 
+# even_fibonacci_numbers_up_to_four_million = find_even_numbers_in_an_array(fibonacci_numbers_up_to_four_million)
+# 
+# sum_of_even_fibonacci_numbers_up_to_four_million = add_an_array(even_fibonacci_numbers_up_to_four_million)
+# 
+# puts sum_of_even_fibonacci_numbers_up_to_four_million.to_s

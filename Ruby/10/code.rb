@@ -27,5 +27,3 @@ def get_sum_of_primes_up_to high_number
   
   return sum_of_primes
 end
-
-# puts get_sum_of_primes_up_to(2000000)
