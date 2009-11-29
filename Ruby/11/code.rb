@@ -2,6 +2,8 @@
 
 # http://projecteuler.net/index.php?section=problems&id=11
 
+# Some unnecessary repetition here.
+
 
 def greatest_product_of_four_adjacent_numbers
   
@@ -30,13 +32,76 @@ def greatest_product_of_four_adjacent_numbers
 
   products = Array.new
   
-  grid.each do |line|
-    line.each do |item|
-      puts item
-    end
+  20.times do |line|    
+    
+    17.times do |item|
+            
+      next_item = item + 1
+      second_item = item + 2
+      third_item = item + 3
+      
+      current_product = grid[line][item] * grid[line][next_item] * grid[line][second_item] * grid[line][third_item]
+      
+      products.push(current_product)
+      
+    end    
+  end
+  
+  20.times do |column|
+    
+    17.times do |row|
+      
+      next_row = row + 1
+      second_row = row + 2
+      third_row = row + 3
+      
+      current_product = grid[row][column] * grid[next_row][column] * grid[second_row][column] * grid[third_row][column]
+      
+      products.push(current_product)
+      
+    end    
+  end
+  
+  17.times do |column|
+    
+    17.times do |row|
+      
+      next_row = row + 1
+      second_row = row + 2
+      third_row = row + 3
+      
+      next_column = column + 1
+      second_column = column + 2
+      third_column = column + 3
+      
+      current_product = grid[row][column] * grid[next_row][next_column] * grid[second_row][second_column] * grid[third_row][third_column]
+      
+      products.push(current_product)
+     
+    end    
   end
 
+  17.times do |column|
+    
+    17.times do |row|
+      
+      next_row = row + 1
+      second_row = row + 2
+      third_row = row + 3
+      
+      this_column = column + 3
+      previous_column = column + 2
+      two_back_column = column + 1
+      third_back_column = column
+      
+      current_product = grid[row][this_column] * grid[next_row][previous_column] * grid[second_row][two_back_column] * grid[third_row][third_back_column]
+      
+      products.push(current_product)
+     
+    end    
+  end
   
+  products.sort!.reverse!
+  
+  return products[0]  
 end
-
-puts greatest_product_of_four_adjacent_numbers
