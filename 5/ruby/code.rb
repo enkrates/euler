@@ -7,6 +7,7 @@ def find_smallest_factorable_number array_of_numbers
   iterator = 1
   
   while answer == 0
+    puts iterator
     
     number_of_matches = 0
     
