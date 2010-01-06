@@ -21,6 +21,6 @@ function get_highest_palindrome()
 
 }
 
-echo get_highest_palindrome();
+// echo get_highest_palindrome();
 
 ?>
