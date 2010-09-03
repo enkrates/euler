@@ -1,3 +1,5 @@
+// http://projecteuler.net/index.php?section=problems&id=12
+
 #include <iostream>
 
 using namespace std;
