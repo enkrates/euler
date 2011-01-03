@@ -1,13 +1,13 @@
 #! /usr/bin/env ruby
 
-
 def sum_of_proper_divisors number
   
   sum = 1
   
-  for i in 2...number do
+  for i in 2..Math.sqrt(number) do
     if number % i == 0
       sum += i
+      sum += (number/i)
     end
   end
   
