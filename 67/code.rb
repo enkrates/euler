@@ -19,13 +19,5 @@ while (line = file.gets)
   rows << line.chop.split(" ")
 end
 file.close
-# 
-# 
-# 
-# 
-# rows.each do |row|
-#   row.map { |e| e = e.to_i }
-# end
-# pp rows
 
 puts get_largest_sum rows
