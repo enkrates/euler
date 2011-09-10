@@ -19,8 +19,27 @@ require 'pp'
 [04, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 04, 23]
 ]
 size = @triangle.size
-pp @triangle[size-1]
+# pp @triangle[size-1]
 
 def get_largest_sum array
+  puts array.size
+  asmo = array.size - 1
+  asmo.downto(1) { |row|
+    puts row
+    0.upto(row-1) { |col|
+      puts array[row][col]
+      puts array[row][col+1]
+      puts array[row-1][col]
+      array[row-1][col] += [array[row][col], array[row][col+1]].max
+      array[row-1][col]
+    }
+  }
+  pp array
+  array[0][0]
+end
+
+puts get_largest_sum @triangle
+
+def add_max_to_curent_value current_row, current_column
   
 end
