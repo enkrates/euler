@@ -6,15 +6,13 @@
  * Licensed under the MIT license.
  */
 
+var _ = require('underscore')._;
+
 
 exports.eulerNumber = function(number) {
-	var current_total = 0;
-	
-	for (var i=0; i < number; i++) { 
-		if (( i % 3 === 0 ) || ( i % 5 === 0 )){
-			current_total += i;
-		}
-	}
-	
-	return current_total;
+	var range = _.range(number);
+	return _.chain(range)
+	.filter(function(num) { return num % 3 === 0 || num % 5 === 0; })
+	.reduce(function(first, second) {return first + second;})
+	.value();
 };

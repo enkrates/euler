@@ -28,8 +28,12 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "underscore": ">0.1"
+  },
   "devDependencies": {
-    "grunt": "~0.3.12"
+    "grunt": "~0.3.12",
+    "underscore": ">0.1"
   },
   "keywords": []
 }

@@ -1,5 +1,4 @@
 var PE1 = require('../lib/PE1.js');
-
 /*
   ======== A Handy Little Nodeunit Reference ========
   https://github.com/caolan/nodeunit
