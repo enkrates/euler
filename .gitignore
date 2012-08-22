@@ -3,3 +3,4 @@
 *.1
 build/
 *.xcodeproj
+*/js/node_modules/
