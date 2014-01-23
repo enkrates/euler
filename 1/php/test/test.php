@@ -7,10 +7,10 @@ class EulerTest extends PHPUnit_Framework_TestCase
 {
 	
 	function __construct() {
-            $this->first_number  = EulerNumber(10);
-            $this->second_number = EulerNumber(20);
-            $this->third_number  = EulerNumber(35);
-        }
+        $this->first_number  = EulerNumber(10);
+        $this->second_number = EulerNumber(20);
+        $this->third_number  = EulerNumber(35);
+    }
 	
 	public function testEulerNumbers(){
 	    $this->assertEquals( 23, $this->first_number,  "We were looking for 23, but got $this->first_number" );
